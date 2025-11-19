@@ -4,6 +4,14 @@ button {
   cursor: pointer;
 }
 
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 .spinner {
   background-image: linear-gradient(rgb(186, 66, 255) 35%, rgb(0, 225, 255));
   width: 180px;

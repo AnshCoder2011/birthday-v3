@@ -7,6 +7,8 @@ import IntroScreen from "@/components/screens/IntroScreen"
 import CakeScreen from "@/components/screens/CakeScreen"
 import PhotosScreen from "@/components/screens/PhotosScreen"
 import MessageScreen from "@/components/screens/MessageScreen"
+import BalloonsScreen from "@/components/screens/BalloonsScreen"
+import MusicScreen from "@/components/screens/MusicScreen"
 
 export default function HomePage() {
   const [currentScreen, setCurrentScreen] = useState(0)
@@ -17,6 +19,8 @@ export default function HomePage() {
     <CakeScreen key="cake" onNext={() => setCurrentScreen(3)} />,
     <PhotosScreen key="photos" onNext={() => setCurrentScreen(4)} />,
     <MessageScreen key="message" onNext={() => setCurrentScreen(5)} />,
+    <BalloonsScreen key="balloons" onNext={() => setCurrentScreen(6)} />,
+    <MusicScreen key="music" />,
   ]
 
   return (
